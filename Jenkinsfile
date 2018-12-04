@@ -23,8 +23,6 @@ pipeline {
 			-p 80:80 \\
       -p 443:443 \\
 			nginx-server'''
-		
-		  sh 'docker cp /var/www/ZeroSSL/. nginx-server:/var/www/ZeroSSL;'
       }
     }
   }
